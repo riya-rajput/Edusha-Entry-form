@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"; 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Form</title>
+</head>
+<body>
+    <form action="/reg" method="POST" id="regForm">
+        <lable id="title">Registration Request</lable>
+        <table>
+          <tboby>
+            <tr>
+              <td class="lbl">Name: </td>
+              <td><input type="text" name="name" id="name" class="textbox"/>
+            </tr>
+            <tr>
+              <td></td>
+              <td><lable class="help">maximum 25 characters</lable></td>
+            </tr>
+            <tr>
+              <td class="lbl">E-mail:</td>
+              <td><input type="text" name="mail" id="mail" class="textbox"/>
+            </tr>
+            <tr>
+              <td></td>
+              <td><lable class="help"> @mail.com only</lable></td>
+            </tr>
+            <tr>
+              <td class="lbl">Password:</td>
+              <td><input type="password" name="password1" id="password1" class="textbox"/>
+            </tr>
+            <tr>
+              <td></td>
+              <td><lable class="help">from 5 to 10 characters</lable></td>
+            </tr>
+            <tr>
+              <td class="lbl">Mobile No:</td>
+              <td><input type="password" name="password2" id="password2" class="textbox"/>
+            </tr>
+            <tr>
+              <td></td>
+              <td><lable class="help">enter a valid number</lable></td>
+            </tr>
+            <tr>
+              <td class="lbl">Information:</td>
+              <td><textarea maxlength="250" name="info" id="info" class="textbox"></textarea>
+            </tr>
+            <tr>
+              <td></td>
+              <td><lable class="help">maximum 250 characters</lable></td>
+            </tr>
+          </tbody>
+        </table>
+        <input type="button" id="send" value="Send my request"/>
+      </form>
+        <script src="script.js"> </script>
+</body>
+</html>
